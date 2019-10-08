@@ -1,0 +1,27 @@
+$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({    //Get calender
+			defaultDate: '2014',           //Set default date 
+			editable: true,                //Make editable
+			events: [                      //Declare events with JSON format
+				{
+					title: 'event1',
+					date: '2014/09/25'
+				},
+				{
+					title: 'event2',
+					date: '2014/09/26',
+					enddate: '2014/09/29'
+				},
+				{
+					title: 'event3',
+					date: '2014/09/27'
+				},
+				{
+					title: 'event4',
+					date: '2014/09/30'
+				},
+			]
+		});
+		
+	});
